@@ -6,7 +6,7 @@
  *  @version 1.0.0
  */
 
-namespace nonzod\foundation;
+namespace foundationize\foundation;
 
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;

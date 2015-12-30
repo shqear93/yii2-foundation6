@@ -1,34 +1,28 @@
 <?php
-
 /**
- *  @copyright Copyright &copy; Digisin soc. coop, digisin.it 2014
- *  @package nonzod/yii2-foundation
- *  @version 1.0.0
+ * FoundationAsset - defines the AssetBundle for Foundation resources
+ *
+ * @link http://www.foundationize.com/#yii2
  */
 
-namespace nonzod\foundation;
+namespace app\assets;
 
 use yii\web\AssetBundle;
 
-/**
- * Asset bundle for the foundation css and js files.
- *
- * @author Nicola Tomassoni <nicola@digisin.it>
- * @since 0.0.1
- * @see
- */
-class FoundationAsset extends AssetBundle {
-
-  public $sourcePath = '@bower/foundation';
-  public $css = [
-      'css/normalize.css',
-      'css/foundation.css',
-  ];
-  public $js = [
-      'js/foundation.js'
-  ];
-  public $depends = [
-      'nonzod\foundation\ModernizrAsset',
-      'nonzod\foundation\FastclickAsset'
-  ];
+class FoundationAsset extends AssetBundle 
+{
+    public $basePath = '@webroot';
+    public $baseUrl = '@web';
+    
+    public $css = [
+        'https://cdn.jsdelivr.net/foundation/6.0.5/foundation.min.css',
+    ];
+    public $js = [
+        'https://cdn.jsdelivr.net/foundation/6.0.5/foundation.min.js',
+        'js/foundationize.js'
+    ];
+    public $depends = [
+        'yii\web\JqueryAsset'
+    ]; 
+    
 }

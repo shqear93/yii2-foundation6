@@ -6,9 +6,9 @@
  *  @version 0.0.1
  */
 
-namespace nonzod\foundation\grid;
+namespace foundationize\foundation\grid;
 
-use nonzod\foundation\FoundationIconAsset;
+use foundationize\foundation\FoundationIconAsset;
 
 /**
  * Description of GridView
@@ -26,7 +26,7 @@ class GridView extends \yii\grid\GridView {
      * @var array 
      * @see [[\yii\widgets\BaseListView::pager]]
      */
-    public $pager = ['class' => 'nonzod\foundation\LinkPager'];
+    public $pager = ['class' => 'foundationize\foundation\LinkPager'];
     
     /**
      * @inheritdoc

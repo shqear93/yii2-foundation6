@@ -6,7 +6,7 @@
  *  @version dev
  */
 
-namespace nonzod\foundation;
+namespace foundationize\foundation;
 
 /**
  * Description of Widget

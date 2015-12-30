@@ -6,10 +6,10 @@
  *  @version 1.0.0
  */
 
-namespace nonzod\foundation\grid;
+namespace foundationize\foundation\grid;
 
 use Yii;
-use nonzod\foundation\helpers\Html;
+use foundationize\foundation\helpers\Html;
 
 /**
  * Description of ActionColumn

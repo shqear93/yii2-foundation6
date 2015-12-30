@@ -6,7 +6,7 @@
  *  @version dev
  */
 
-namespace nonzod\foundation;
+namespace foundationize\foundation;
 
 use yii\helpers\Html;
 
@@ -17,7 +17,7 @@ use yii\helpers\Html;
  */
 class ActiveForm extends \yii\widgets\ActiveForm {
 
-  public $fieldClass = 'nonzod\foundation\ActiveField';
+  public $fieldClass = 'foundationize\foundation\ActiveField';
   
   public $layout = 'default';
 
