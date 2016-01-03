@@ -21,6 +21,7 @@ class FoundationAsset extends AssetBundle
         'https://cdn.jsdelivr.net/foundation/6.0.5/foundation.min.js',
         'js/foundationize.js'
     ];
+    // Depends on jQuery
     public $depends = [
         'yii\web\JqueryAsset'
     ]; 
