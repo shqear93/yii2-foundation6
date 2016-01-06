@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  @copyright Copyright &copy; Digisin soc. coop, digisin.it 2014
- *  @package nonzod/yii2-foundation
+ *  @link    http://foundationize.com
+ *  @package foundationize/yii2-foundation
  *  @version 1.0.0
  */
 
@@ -14,7 +14,7 @@ use yii\helpers\ArrayHelper;
 /**
  * Description of ButtonGroup
  *
- * @author Nicola Tomassoni <nicola@digisin.it>
+ 
  * @see http://foundation.zurb.com/docs/components/button_groups.html
  */
 class ButtonGroup extends Widget {

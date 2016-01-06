@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  @copyright Copyright &copy; Digisin soc. coop, digisin.it 2014
- *  @package nonzod/yii2-foundation
+ *  @link    http://foundationize.com
+ *  @package foundationize/yii2-foundation
  *  @version dev
  */
 
@@ -10,11 +10,6 @@ namespace foundationize\foundation;
 
 use yii\helpers\Html;
 
-/**
- * Description of ActiveForm
- *
- * @author Nicola Tomassoni <nicola@digisin.it>
- */
 class ActiveForm extends \yii\widgets\ActiveForm {
 
   public $fieldClass = 'foundationize\foundation\ActiveField';

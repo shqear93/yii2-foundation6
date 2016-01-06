@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  @copyright Copyright &copy; Digisin soc. coop, digisin.it 2014
- *  @package nonzod/yii2-foundation
+ *  @link    http://foundationize.com
+ *  @package foundationize/yii2-foundation
  *  @version dev
  */
 
@@ -11,7 +11,7 @@ namespace foundationize\foundation;
 /**
  * Description of Widget
  *
- * @author Nicola Tomassoni <nicola@digisin.it>
+ 
  * @since 0.0.1
  * @see
  */

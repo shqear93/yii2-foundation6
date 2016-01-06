@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  @copyright Copyright &copy; Digisin soc. coop, digisin.it 2014
- *  @package nonzod/yii2-foundation
+ *  @link    http://foundationize.com
+ *  @package foundationize/yii2-foundation
  *  @version 0.0.1
  */
 
@@ -13,7 +13,7 @@ use foundationize\foundation\FoundationIconAsset;
 /**
  * Description of GridView
  *
- * @author Nicola Tomassoni <nicola@digisin.it>
+ 
  */
 class GridView extends \yii\grid\GridView {
   /**

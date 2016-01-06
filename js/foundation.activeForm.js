@@ -1,6 +1,6 @@
 /* 
  *  @copyright Copyright &copy; Nicola Tomassoni, digisin.it 2014
- *  @package nonzod/yii2-foundation
+ *  @package foundationize/yii2-foundation
  *  @version dev
  */
 

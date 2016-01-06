@@ -1,9 +1,7 @@
 <?php
-
 /**
- *  @copyright Copyright &copy; Digisin soc. coop, digisin.it 2014
- *  @package nonzod/yii2-foundation
- *  @version dev
+ *  @link    http://foundationize.com
+ *  @package foundationize/yii2-foundation 
  */
 
 namespace foundationize\foundation;
@@ -14,7 +12,7 @@ use yii\helpers\ArrayHelper;
 /**
  * Description of ActiveField
  *
- * @author Nicola Tomassoni <nicola@digisin.it>
+ 
  */
 class ActiveField extends \yii\widgets\ActiveField {
 
