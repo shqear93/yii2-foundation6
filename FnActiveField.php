@@ -18,7 +18,7 @@ class FnActiveField extends \yii\widgets\ActiveField {
 
   public $template = "{beginLabel}{labelTitle}\n{input}{endLabel}\n{error}\n{hint}\n";
   public $inlineTemplate = "<div class=\"row\"><div class=\"small-3 columns\">{label}</div><div class=\"small-9 columns\">{input}\n{error}\n{hint}</div></div>\n";
-  public $checkboxTemplate = "{label}\n{input}\n{error}\n{hint}\n";
+  public $checkboxTemplate = "{input}\n{label}\n{error}\n{hint}\n";
   public $checkboxListTemplate = "{label}\n{input}\n{error}\n{hint}\n";
   public $radioTemplate = "{label}\n{input}\n{error}\n{hint}\n";
   public $radioListTemplate = "{label}\n{input}\n{error}\n{hint}\n";
@@ -124,7 +124,9 @@ class FnActiveField extends \yii\widgets\ActiveField {
       $this->template = $this->form->layout === 'inline' ?
           $this->inlineTemplate : $this->checkboxTemplate;
     }
-
+    
+    $this->template = $this->checkboxTemplate;
+    
     return parent::checkbox($options, $enclosedByLabel);
   }
 
