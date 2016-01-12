@@ -17,9 +17,11 @@ class FoundationAsset extends AssetBundle
     public $css = [
         'https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.css', // The core Foundation CSS
     ];
+    // JS awesomeness: http://www.jsdelivr.com/projects/foundation
     public $js = [
         'https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js',   // The core Foundation JS
-        'https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.abide.js', // Form validation
+        // We will use Yii2's built-in front and backend validation instead of abide
+        //'https://cdn.jsdelivr.net/foundation/6.1.1/js/foundation.abide.js',
         'js/foundationize.js'
     ];
     // Depends on jQuery

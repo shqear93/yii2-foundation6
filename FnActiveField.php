@@ -14,7 +14,7 @@ use yii\helpers\ArrayHelper;
  *
  
  */
-class ActiveField extends \yii\widgets\ActiveField {
+class FnActiveField extends \yii\widgets\ActiveField {
 
   public $template = "{beginLabel}{labelTitle}\n{input}{endLabel}\n{error}\n{hint}\n";
   public $inlineTemplate = "<div class=\"row\"><div class=\"small-3 columns\">{label}</div><div class=\"small-9 columns\">{input}\n{error}\n{hint}</div></div>\n";
@@ -205,7 +205,7 @@ class ActiveField extends \yii\widgets\ActiveField {
     $config = [
         'hintOptions' => [
             'tag' => 'p',
-            'class' => 'hint-box'
+            'class' => 'help-text'
         ],
         'errorOptions' => [
             'tag' => 'small',
