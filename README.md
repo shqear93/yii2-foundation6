@@ -48,5 +48,5 @@ Further Information
 Please, check the [Zurb Foundation site](http://foundation.zurb.com) documentation for further information about its configuration options.
 
 
-<i>Blogger & Web Developer's Toolkit</i>  
-[twoggle.com](http://twoggle.com)
+<i>Your framework + Foundation = <3</i>  
+[foundationize.com](http://foundationize.com)
