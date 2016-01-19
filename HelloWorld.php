@@ -12,6 +12,6 @@ class HelloWorld {
     
     public static function sayHello()
     {
-        return 'Hello World, Composer!';
+        return 'Well hello, Foundationize! Looks like composer is working OK ...';
     }
 }
