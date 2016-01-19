@@ -16,6 +16,7 @@
             "homepage": "http://foundationize.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": "*"
     },
