@@ -31,13 +31,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist shqear/yii2-foundation6 "*"
+php composer.phar require --prefer-dist shqear/yii2-foundation6 "dev-master"
 ```
 
 or add
 
 ```
-"shqear/yii2-foundation6": "*"
+"shqear/yii2-foundation6": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
