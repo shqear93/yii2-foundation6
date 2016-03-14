@@ -1,7 +1,6 @@
-[![Latest Stable Version](https://poser.pugx.org/foundationize/yii2-foundation/v/stable.svg)](https://packagist.org/packages/foundationize/yii2-foundation) [![Total Downloads](https://poser.pugx.org/foundationize/yii2-foundation/downloads.svg)](https://packagist.org/packages/foundationize/yii2-foundation) [![Latest Unstable Version](https://poser.pugx.org/foundationize/yii2-foundation/v/unstable.svg)](https://packagist.org/packages/foundationize/yii2-foundation) [![License](https://poser.pugx.org/foundationize/yii2-foundation/license.svg)](https://packagist.org/packages/foundationize/yii2-foundation)
+[![Latest Stable Version](https://poser.pugx.org/shqear/yii2-foundation6/v/stable)](https://packagist.org/packages/shqear/yii2-foundation6) [![Total Downloads](https://poser.pugx.org/shqear/yii2-foundation6/downloads)](https://packagist.org/packages/shqear/yii2-foundation6) [![Latest Unstable Version](https://poser.pugx.org/shqear/yii2-foundation6/v/unstable)](https://packagist.org/packages/shqear/yii2-foundation6) [![License](https://poser.pugx.org/shqear/yii2-foundation6/license)](https://packagist.org/packages/shqear/yii2-foundation6)
 
-
-Foundation Extension for Yii 2
+Foundation6 Extension for Yii2 (Under Construction)
 ==============================
 
 Based on yii2-bootstrap code, use this extension instead of yii2-bootstrap.
@@ -32,13 +31,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist foundationize/yii2-foundation "dev-master"
+php composer.phar require --prefer-dist shqear/yii2-foundation6 "*"
 ```
 
 or add
 
 ```
-"foundationize/yii2-foundation": "dev-master"
+"shqear/yii2-foundation6": "*"
 ```
 
 to the require section of your `composer.json` file.
