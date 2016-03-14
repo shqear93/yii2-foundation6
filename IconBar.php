@@ -6,9 +6,9 @@
  *  @version 1.0.0
  */
 
-namespace foundationize\foundation;
+namespace shqear\foundation6;
 
-use foundationize\foundation\helpers\Html;
+use shqear\foundation6\helpers\Html;
 use yii\helpers\ArrayHelper;
 use yii\base\InvalidConfigException;
 
@@ -24,7 +24,7 @@ class IconBar extends Widget {
    * @var type array
    *  'icon' => string|array
    *    string: the icons name without prefix
-   *    array: params for [[foundationize\foundation\helpers\Html::Icon]] object (['name' => '', 'options' => [], 'prefix' => '', 'tag' => ''])
+   *    array: params for [[shqear\foundation6\helpers\Html::Icon]] object (['name' => '', 'options' => [], 'prefix' => '', 'tag' => ''])
    *  'img' => 'path/to/img'
    *    ignored if 'icon' is set
    *  'label' => 'label'
@@ -62,7 +62,7 @@ class IconBar extends Widget {
    * ~~~
    * 
    * 
-   * @see [[foundationize\foundation\helpers\Html::icon()]]
+   * @see [[shqear\foundation6\helpers\Html::icon()]]
    */
   public $items = [];
 

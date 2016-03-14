@@ -6,7 +6,7 @@
  *  @version 1.0.0
  */
 
-namespace foundationize\foundation\helpers;
+namespace shqear\foundation6\helpers;
 
 /**
  * Description of Html

@@ -5,7 +5,7 @@
  * @link http://www.foundationize.com/#yii2
  */
 
-namespace foundationize\foundation;
+namespace shqear\foundation6;
 
 use yii\web\AssetBundle;
 

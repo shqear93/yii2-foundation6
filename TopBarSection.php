@@ -6,7 +6,7 @@
  *  @version 1.0.0
  */
 
-namespace foundationize\foundation;
+namespace shqear\foundation6;
 
 use Yii;
 use yii\helpers\Html;

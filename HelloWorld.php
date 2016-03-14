@@ -5,7 +5,7 @@
  * @author gvanto
  */
 
-namespace foundationize\foundation;
+namespace shqear\foundation6;
 
 
 class HelloWorld {

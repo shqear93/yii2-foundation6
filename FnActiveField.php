@@ -4,7 +4,7 @@
  *  @package foundationize/yii2-foundation 
  */
 
-namespace foundationize\foundation;
+namespace shqear\foundation6;
 
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;

@@ -6,14 +6,14 @@
  *  @version dev
  */
 
-namespace foundationize\foundation;
+namespace shqear\foundation6;
 
 use Yii;
 use yii\helpers\Html;
 
 class FnActiveForm extends \yii\widgets\ActiveForm {
 
-    public $fieldClass = 'foundationize\foundation\FnActiveField';
+    public $fieldClass = 'shqear\foundation6\FnActiveField';
     public $layout = 'default';
 
     /**

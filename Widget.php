@@ -6,7 +6,7 @@
  *  @version dev
  */
 
-namespace foundationize\foundation;
+namespace shqear\foundation6;
 
 /**
  * Description of Widget

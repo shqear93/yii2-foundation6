@@ -6,10 +6,10 @@
  *  @version 1.0.0
  */
 
-namespace foundationize\foundation\grid;
+namespace shqear\foundation6\grid;
 
 use Yii;
-use foundationize\foundation\helpers\Html;
+use shqear\foundation6\helpers\Html;
 
 /**
  * Description of ActionColumn
