@@ -19,7 +19,7 @@
       "homepage": "http://fb.me/shqear"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "yiisoft/yii2": "*"
   },
