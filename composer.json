@@ -21,7 +21,8 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "yiisoft/yii2": "*"
+    "yiisoft/yii2": "*",
+    "timetoogo/pinq": "~3.3"
   },
   "autoload": {
     "psr-4": {
