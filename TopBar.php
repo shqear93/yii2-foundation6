@@ -58,7 +58,9 @@ class TopBar extends Widget
         }
 
         echo Html::beginTag($tag, $options);
-        echo Html::tag('div', implode("\n", $this->headerItems()), ['class' => 'top-bar-title']);
+        if (!empty($this->titleLabel)) {
+            echo Html::tag('div', implode("\n", $this->headerItems()), ['class' => 'top-bar-title']);
+        }
     }
 
     /**

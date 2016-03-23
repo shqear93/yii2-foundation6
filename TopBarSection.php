@@ -24,17 +24,19 @@ class TopBarSection extends NavigationWidget
 
     /**
      *
-     * @var type array
-     *
-     *  'label' => 'label'
-     *    'url' => 'url'
-     *    'linkOptions' => []
-     *    'options' => []
-     *    'active => true|false
-     *  'visible => true|false
-     *    'items' => [],
-     *    'position' => 'left|right'
-     *
+     * @var array $items
+     *  <pre>
+     *  [
+     *      'label' => 'label'
+     *      'url' => 'url'
+     *      'linkOptions' => []
+     *      'options' => []
+     *      'active => true|false
+     *      'visible => true|false
+     *      'items' => [],
+     *      'position' => 'left|right'
+     *  ]
+     *  </pre>
      */
     public $items = [];
 
@@ -48,6 +50,7 @@ class TopBarSection extends NavigationWidget
         if (!is_null($this->toggleMenuId)) {
             $toggleId = $this->toggleMenuId;
         } else {
+            /** @var TopBar $top */
             $top = (static::$stack[0]);
             $toggleId = $top->getToggleMenuId();
         }
@@ -117,17 +120,15 @@ class TopBarSection extends NavigationWidget
 
             // build menu
             {
-                $ulOptions = ['class' => 'menu'];
+                Html::addCssClass($this->options, 'menu');
                 if ($isMainMenu && !$hasHtmlItem) {
-                    $ulOptions['data-dropdown-menu'] = '';
-                    Html::addCssClass($ulOptions, 'dropdown');
+                    $this->options['data-dropdown-menu'] = '';
+                    Html::addCssClass($this->options, 'dropdown');
                 }
-
                 if ($vertical) {
-                    Html::addCssClass($ulOptions, 'vertical');
+                    Html::addCssClass($this->options, 'vertical');
                 }
-
-                $ul = Html::tag('ul', implode("\n", $items), $ulOptions);
+                $ul = Html::tag('ul', implode("\n", $items), $this->options);
                 if ($isMainMenu) {
                     $out .= Html::tag('div', $ul, ['class' => 'top-bar-' . $position]);
                 } else {
@@ -177,7 +178,7 @@ class TopBarSection extends NavigationWidget
         $items = ArrayHelper::getValue($item, 'items');
         $url = ArrayHelper::getValue($item, 'url', '#');
         $linkOptions = ArrayHelper::getValue($item, 'linkOptions', []);
-        $vertical = ArrayHelper::getValue($item, 'vertical', true);
+        $vertical = ArrayHelper::getValue($item, 'vertical', false);
 
         if (isset($item['active'])) {
             $active = ArrayHelper::remove($item, 'active', false);
