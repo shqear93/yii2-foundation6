@@ -1,6 +1,6 @@
 /* 
  *  @copyright Copyright &copy; Nicola Tomassoni, digisin.it 2014
- *  @package foundationize/yii2-foundation
+ *  @package shqear/yii2-foundation6
  *  @version dev
  */
 

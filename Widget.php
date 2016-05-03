@@ -2,7 +2,7 @@
 
 /**
  * @link    http://foundationize.com
- * @package foundationize/yii2-foundation
+ * @package shqear/yii2-foundation6
  * @version dev
  */
 
@@ -18,7 +18,6 @@ use yii\helpers\Json;
  */
 class Widget extends \yii\base\Widget
 {
-
     /**
      * @var array the HTML attributes for the widget container tag.
      * @see \yii\helpers\Html::renderTagAttributes() for details on how attributes are being rendered.
@@ -71,5 +70,4 @@ class Widget extends \yii\base\Widget
             $view->registerJs(implode("\n", $js));
         }
     }
-
 }

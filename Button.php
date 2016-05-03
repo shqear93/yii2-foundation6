@@ -1,9 +1,9 @@
 <?php
 
 /**
- *  @link    http://foundationize.com
- *  @package foundationize/yii2-foundation
- *  @version 1.0.0
+ * @link    http://foundationize.com
+ * @package shqear/yii2-foundation6
+ * @version 1.0.0
  */
 
 namespace shqear\foundation6;
@@ -12,59 +12,57 @@ use yii\helpers\Html;
 
 /**
  * Description of Button
- *
- 
  * @see http://foundation.zurb.com/docs/components/buttons.html
  */
-class Button extends Widget {
+class Button extends Widget
+{
+    /**
+     * @var array
+     */
+    public $options = ['class' => 'button'];
 
-  /**
-   *
-   * @var array 
-   */
-  public $options = ['class' => 'button'];
-  
-  /**
-   * @var string the tag to use to render the button
-   */
-  public $tagName = 'a';
+    /**
+     * @var string the tag to use to render the button
+     */
+    public $tagName = 'a';
 
-  /**
-   * @var string the button label
-   */
-  public $label = 'Button';
+    /**
+     * @var string the button label
+     */
+    public $label = 'Button';
 
-  /**
-   *
-   * @var string|array the button link, used only if tagName is 'a' 
-   */
-  public $url = '#';
-  
-  /**
-   * @var boolean whether the label should be HTML-encoded.
-   */
-  public $encodeLabel = true;
+    /**
+     *
+     * @var string|array the button link, used only if tagName is 'a'
+     */
+    public $url = '#';
 
-  /**
-   * Initializes the widget.
-   * If you override this method, make sure you call the parent implementation first.
-   */
-  public function init() {
-    parent::init();
-    $this->clientOptions = false;
-    $this->options['role'] = 'button';
-  }
+    /**
+     * @var boolean whether the label should be HTML-encoded.
+     */
+    public $encodeLabel = true;
 
-  /**
-   * Renders the widget.
-   */
-  public function run() {
-    if($this->tagName == 'a') {
-      echo Html::a($this->encodeLabel ? Html::encode($this->label) : $this->label, $this->url, $this->options);
-    } else {
-      $this->options['tabindex'] = '0';
-      echo Html::tag($this->tagName, $this->encodeLabel ? Html::encode($this->label) : $this->label, $this->options);
+    /**
+     * Initializes the widget.
+     * If you override this method, make sure you call the parent implementation first.
+     */
+    public function init()
+    {
+        parent::init();
+        $this->clientOptions = false;
+        $this->options['role'] = 'button';
     }
-  }
 
+    /**
+     * Renders the widget.
+     */
+    public function run()
+    {
+        if ($this->tagName == 'a') {
+            echo Html::a($this->encodeLabel ? Html::encode($this->label) : $this->label, $this->url, $this->options);
+        } else {
+            $this->options['tabindex'] = '0';
+            echo Html::tag($this->tagName, $this->encodeLabel ? Html::encode($this->label) : $this->label, $this->options);
+        }
+    }
 }
