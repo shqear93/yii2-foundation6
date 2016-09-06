@@ -72,4 +72,13 @@ class Html extends \yii\helpers\Html
 
         return static::tag($tag, $content, $options);
     }
+
+    public static function submitButton($content = 'Submit', $options = [])
+    {
+        $options['type'] = 'submit';
+        static::addCssClass($options, 'button');
+        return static::button($content, $options);
+    }
+
+
 }
